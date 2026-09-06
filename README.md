@@ -61,7 +61,6 @@ This project presents a rigorous comparative benchmark of **seven supervised mac
 
 ## 🩺 Dataset Description & Clinical Glossary
 
-The dataset originates from the ongoing **Framingham Heart Study** (subset available on Kaggle), containing $4,238$ patient records with $15$ baseline clinical, demographic, and behavioral features observed over a 10-year follow-up period.
 The dataset originates from the ongoing **Framingham Heart Study**, accessible on Kaggle via [Framingham Heart Study Dataset](https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset). It contains $4,238$ patient records with $15$ baseline clinical, demographic, and behavioral features observed over a 10-year follow-up period.
 
 ### Feature Dictionary
@@ -359,7 +358,6 @@ jupyter notebook "Comparative study of different ML for  CVD predictions.ipynb"
 
 ## 📚 References & Acknowledgments
 
-1. **Framingham Heart Study**: Mahmood, S. S., Levy, D., Vasan, R. S., & Wang, T. J. (2014). *The Framingham Heart Study and the epidemiology of cardiovascular disease: a historical perspective.* The Lancet, 383(9921), 999-1008.
 1. **Framingham Heart Study Dataset**: [Kaggle Dataset by Aasheesh](https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset). Primary clinical study reference: Mahmood, S. S., Levy, D., Vasan, R. S., & Wang, T. J. (2014). *The Framingham Heart Study and the epidemiology of cardiovascular disease: a historical perspective.* The Lancet, 383(9921), 999-1008.
 2. **SMOTE**: Chawla, N. V., Bowyer, K. W., Hall, L. O., & Kegelmeyer, W. P. (2002). *SMOTE: synthetic minority over-sampling technique.* Journal of Artificial Intelligence Research, 16, 267-297.
 3. **Scikit-Learn**: Pedregosa, F., et al. (2011). *Scikit-learn: Machine Learning in Python.* Journal of Machine Learning Research, 12, 2825-2830.
