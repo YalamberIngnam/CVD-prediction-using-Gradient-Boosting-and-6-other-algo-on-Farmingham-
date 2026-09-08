@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg?logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![Final Report PDF](https://img.shields.io/badge/Report-PDF-E03C31.svg?logo=adobe-acrobat-reader&logoColor=white)](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf)
+[![Final Report PDF](https://img.shields.io/badge/Report-PDF-E03C31.svg?logo=adobe-acrobat-reader&logoColor=white)](Report/ML-ASSIGNMENT-YI-REPORT.pdf)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E.svg?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Imbalanced-Learn](https://img.shields.io/badge/imblearn-SMOTE-blueviolet)](https://imbalanced-learn.org/)
 [![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-20BEFF.svg?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset)
@@ -15,12 +15,12 @@
 > **Instructor:** Prof. Mamta Bhattarai Lamsal  
 > **Institution:** [Madan Bhandari University of Science and Technology (MBUST)](https://mbust.edu.np/), Chitlang, Nepal  
 > **Date:** September 2026  
-> **Final Report:** 📄 [**ML-ASSIGNMENT-FINAL-REPORT-YI.pdf**](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf)
+> **Final Report:** 📄 [**ML-ASSIGNMENT-YI-REPORT.pdf**](Report/ML-ASSIGNMENT-YI-REPORT.pdf)
 
 > [!IMPORTANT]
 > ### 📄 Complete Academic Research Report Available
 > The full comprehensive project report covering complete clinical motivations, mathematical formulations, data leakage auditing, SMOTE mechanics, and extended benchmark comparisons is available in the [`Report/`](Report/) folder:  
-> 🔗 **[👉 Click Here to Read / Download the Final Report (PDF)](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf)**
+> 🔗 **[👉 Click Here to Read / Download the Final Report (PDF)](Report/ML-ASSIGNMENT-YI-REPORT.pdf)**
 
 ---
 
@@ -34,7 +34,7 @@ This project presents a rigorous comparative benchmark of **seven supervised mac
 - **Systematic Feature Scaling Analysis** (Standardization **ON** vs. **OFF**) across linear, distance-based, probabilistic, and ensemble models.
 - **Clinical Metric Prioritization**: In medical screening, **False Negatives are fatal**; thus, models are evaluated primarily on **Sensitivity / Recall**, **ROC-AUC**, and **PR-AUC** rather than misleading raw accuracy.
 
-> 📖 **Full Academic Paper**: For extended theoretical derivations, clinical screening context, and complete methodology, refer to the [**Final Academic Report (PDF)**](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf).
+> 📖 **Full Academic Paper**: For extended theoretical derivations, clinical screening context, and complete methodology, refer to the [**Final Academic Report (PDF)**](Report/ML-ASSIGNMENT-YI-REPORT.pdf).
 
 ---
 
@@ -304,7 +304,7 @@ Final evaluation on the untouched $20\%$ test partition ($719$ negative, $129$ p
 The complete academic report for this study has been compiled and saved in the [`Report/`](Report/) directory. It contains full clinical and theoretical motivations, mathematical derivations for SMOTE and algorithm formulations, data leakage prevention safeguards, cross-validation metrics, and clinical screening implications:
 
 <p align="center">
-  <a href="Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf">
+  <a href="Report/ML-ASSIGNMENT-YI-REPORT.pdf">
     <img src="https://img.shields.io/badge/Download_Report-PDF_Document-E03C31?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Download Final Report PDF" />
   </a>
 </p>
@@ -312,8 +312,8 @@ The complete academic report for this study has been compiled and saved in the [
 | Document Information | Details |
 | :--- | :--- |
 | **Document Title** | *Comparative Study of Different Machine Learning Models for CVD Prediction* |
-| **Direct Link** | [**📥 Click Here to View / Download the Final Report (PDF)**](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf) |
-| **Location in Repo** | [`Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf`](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf) |
+| **Direct Link** | [**📥 Click Here to View / Download the Final Report (PDF)**](Report/ML-ASSIGNMENT-YI-REPORT.pdf) |
+| **Location in Repo** | [`Report/ML-ASSIGNMENT-YI-REPORT.pdf`](Report/ML-ASSIGNMENT-YI-REPORT.pdf) |
 | **File Format / Size** | PDF Document | $\approx 1.1\text{ MB}$ |
 | **Key Topics Covered** | Statistical EDA, Anti-leakage pipeline design, SMOTE oversampling mechanics, 5-Fold Stratified CV benchmark, Feature scaling experiments, and Clinical sensitivity analysis |
 
@@ -330,7 +330,7 @@ The complete academic report for this study has been compiled and saved in the [
 ├── environment.yml                                              # Conda Environment Specification
 │
 ├── Report/                                                      # Academic Report Documentation
-│   └── ML-ASSIGNMENT-FINAL-REPORT-YI.pdf
+│   └── ML-ASSIGNMENT-YI-REPORT.pdf
 │
 ├── Generated Visualizations & Plots/                            # Model Visualizations & High-Res Plots
 │   ├── target_distribution.png                                  # Target class balance
