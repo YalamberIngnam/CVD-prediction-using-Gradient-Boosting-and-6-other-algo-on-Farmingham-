@@ -109,7 +109,7 @@ The dataset exhibits significant target class asymmetry:
 - *Imbalance Ratio:* $\approx 5.6 : 1$. A naive baseline predicting all zeros achieves $84.8\%$ accuracy while failing to identify a single high-risk patient.
 
 <p align="center">
-  <img src="target_distribution.png" alt="Target Distribution" width="550" />
+  <img src="Generated%20Visualizations%20%26%20Plots/target_distribution.png" alt="Target Distribution" width="550" />
 </p>
 
 ---
@@ -118,7 +118,7 @@ The dataset exhibits significant target class asymmetry:
 Distributions of continuous biometric variables reveal significant positive skewness, notably in `glucose` ($\text{skew} = 6.21$) due to extreme diabetic outliers ($> 300\text{ mg/dL}$), as well as `sysBP` ($\text{skew} = 0.98$) and `cigsPerDay` ($\text{skew} = 1.25$).
 
 <p align="center">
-  <img src="feature_distributions.png" alt="Continuous Feature Distributions" width="900" />
+  <img src="Generated%20Visualizations%20%26%20Plots/feature_distributions.png" alt="Continuous Feature Distributions" width="900" />
 </p>
 
 ---
@@ -131,7 +131,7 @@ Patients diagnosed with pre-existing risk conditions show stark increases in 10-
 - **Biological Sex (`male = 1`)**: $18.9\%$ CHD rate (vs. $12.4\%$ in females)
 
 <p align="center">
-  <img src="categorical_rates_grid.png" alt="Categorical CHD Rates" width="950" />
+  <img src="Generated%20Visualizations%20%26%20Plots/categorical_rates_grid.png" alt="Categorical CHD Rates" width="950" />
 </p>
 
 ---
@@ -141,7 +141,7 @@ Patients diagnosed with pre-existing risk conditions show stark increases in 10-
 - **Collinear Feature Pairs**: Systolic and Diastolic Blood Pressure (`sysBP` vs. `diaBP`, $r = 0.78$), and Smoking Status vs. Cigarette Volume (`currentSmoker` vs. `cigsPerDay`, $r = 0.77$).
 
 <p align="center">
-  <img src="correlation_heatmap.png" alt="Correlation Heatmap" width="650" />
+  <img src="Generated%20Visualizations%20%26%20Plots/correlation_heatmap.png" alt="Correlation Heatmap" width="650" />
 </p>
 
 ---
@@ -230,7 +230,7 @@ A controlled experiment was conducted across all models to quantify the empirica
 | **Decision Tree** | 0.557 | 0.552 | +0.005 | 0.019 | **None**: Monotonic threshold invariance |
 
 <p align="center">
-  <img src="scaling_experiment.png" alt="Scaling Experiment Comparison" width="850" />
+  <img src="Generated%20Visualizations%20%26%20Plots/scaling_experiment.png" alt="Scaling Experiment Comparison" width="850" />
 </p>
 
 ---
@@ -252,7 +252,7 @@ Final evaluation on the untouched $20\%$ test partition ($719$ negative, $129$ p
 | **Decision Tree** | **ON** | 0.733 | 0.220 | 0.295 | 0.252 | **0.553** |
 
 <p align="center">
-  <img src="A1_bars_scaled.png" alt="Test Set Model Comparison Bars" width="850" />
+  <img src="Generated%20Visualizations%20%26%20Plots/A1_bars_scaled.png" alt="Test Set Model Comparison Bars" width="850" />
 </p>
 
 ---
@@ -260,12 +260,12 @@ Final evaluation on the untouched $20\%$ test partition ($719$ negative, $129$ p
 ### 4. Precision-Recall & Confusion Matrix Evaluation
 
 <p align="center">
-  <img src="A3_pr_scaled.png" alt="Precision-Recall Curves" width="48%" />
-  <img src="roc_and_confusion.png" alt="Logistic Regression ROC & Confusion Matrix" width="48%" />
+  <img src="Generated%20Visualizations%20%26%20Plots/A3_pr_scaled.png" alt="Precision-Recall Curves" width="48%" />
+  <img src="Generated%20Visualizations%20%26%20Plots/roc_and_confusion.png" alt="Logistic Regression ROC & Confusion Matrix" width="48%" />
 </p>
 
 <p align="center">
-  <img src="A4_confusion_scaled.png" alt="Confusion Matrix Grid Across Models" width="950" />
+  <img src="Generated%20Visualizations%20%26%20Plots/A4_confusion_scaled.png" alt="Confusion Matrix Grid Across Models" width="950" />
 </p>
 
 ---
@@ -296,9 +296,13 @@ Final evaluation on the untouched $20\%$ test partition ($719$ negative, $129$ p
 ├── Comparative study of different ML for  CVD predictions.ipynb  # Primary Jupyter Notebook
 ├── framingham.csv                                               # Framingham Heart Study Dataset
 ├── README.md                                                    # Project Documentation & Report
-├── requirements.txt                                             # Python Dependencies
+├── requirements.txt                                             # Python Dependencies (pip)
+├── environment.yml                                              # Conda Environment Specification
 │
-├── 📊 Generated Visualizations & Plots:
+├── Report/                                                      # Academic Report Documentation
+│   └── ML-ASSIGNMENT-FINAL-REPORT-YI.pdf
+│
+├── Generated Visualizations & Plots/                            # Model Visualizations & High-Res Plots
 │   ├── target_distribution.png                                  # Target class balance
 │   ├── feature_distributions.png                                # Continuous feature distributions
 │   ├── categorical_rates_grid.png                               # Categorical CHD incidence breakdown
@@ -330,21 +334,25 @@ Final evaluation on the untouched $20\%$ test partition ($719$ negative, $129$ p
    cd CVD-prediction-using-Gradient-Boosting-and-6-other-algo-on-Farmingham-
    ```
 
-2. **Create and activate a virtual environment:**
+2. **Create and activate an environment:**
    ```bash
-   # Using venv
+   # Option A: Using venv (Recommended for pip)
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+   # Option B: Using Conda
+   conda env create -f environment.yml
+   conda activate cvd-prediction
    ```
 
-3. **Install dependencies:**
+3. **Install dependencies (if using venv):**
    ```bash
    pip install -r requirements.txt
    ```
 
    *Alternatively, install manually:*
    ```bash
-   pip install numpy pandas matplotlib seaborn scikit-learn imbalanced-learn jupyter
+   pip install numpy pandas scipy matplotlib seaborn scikit-learn imbalanced-learn jupyter ipykernel
    ```
 
 ### Running the Notebook
