@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg?logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Final Report PDF](https://img.shields.io/badge/Report-PDF-E03C31.svg?logo=adobe-acrobat-reader&logoColor=white)](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E.svg?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Imbalanced-Learn](https://img.shields.io/badge/imblearn-SMOTE-blueviolet)](https://imbalanced-learn.org/)
 [![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-20BEFF.svg?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset)
@@ -14,6 +15,12 @@
 > **Instructor:** Prof. Mamta Bhattarai Lamsal  
 > **Institution:** [Madan Bhandari University of Science and Technology (MBUST)](https://mbust.edu.np/), Chitlang, Nepal  
 > **Date:** September 2026  
+> **Final Report:** 📄 [**ML-ASSIGNMENT-FINAL-REPORT-YI.pdf**](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf)
+
+> [!IMPORTANT]
+> ### 📄 Complete Academic Research Report Available
+> The full comprehensive project report covering complete clinical motivations, mathematical formulations, data leakage auditing, SMOTE mechanics, and extended benchmark comparisons is available in the [`Report/`](Report/) folder:  
+> 🔗 **[👉 Click Here to Read / Download the Final Report (PDF)](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf)**
 
 ---
 
@@ -26,6 +33,8 @@ This project presents a rigorous comparative benchmark of **seven supervised mac
 - **Handling Severe Class Imbalance** (~$84.8\%$ non-risk vs. ~$15.2\%$ CHD incident) using Synthetic Minority Over-sampling Technique (**SMOTE**) and Cost-Sensitive Learning.
 - **Systematic Feature Scaling Analysis** (Standardization **ON** vs. **OFF**) across linear, distance-based, probabilistic, and ensemble models.
 - **Clinical Metric Prioritization**: In medical screening, **False Negatives are fatal**; thus, models are evaluated primarily on **Sensitivity / Recall**, **ROC-AUC**, and **PR-AUC** rather than misleading raw accuracy.
+
+> 📖 **Full Academic Paper**: For extended theoretical derivations, clinical screening context, and complete methodology, refer to the [**Final Academic Report (PDF)**](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf).
 
 ---
 
@@ -50,6 +59,7 @@ This project presents a rigorous comparative benchmark of **seven supervised mac
     - [3. Held-Out Test Set Performance ($N = 848$)](#3-held-out-test-set-performance-n--848)
     - [4. Precision-Recall \& Confusion Matrix Evaluation](#4-precision-recall--confusion-matrix-evaluation)
   - [💡 Clinical Discussion \& Key Findings](#-clinical-discussion--key-findings)
+  - [📄 Academic Project Report](#-academic-project-report)
   - [📁 Repository Structure](#-repository-structure)
   - [🚀 Getting Started \& Reproducibility](#-getting-started--reproducibility)
     - [Prerequisites](#prerequisites)
@@ -286,6 +296,26 @@ Final evaluation on the untouched $20\%$ test partition ($719$ negative, $129$ p
      2. **Systolic Blood Pressure (`sysBP`)** and **Hypertension (`prevalentHyp`)**.
      3. **Daily Smoking Volume (`cigsPerDay`)**.
      4. **Fasting Blood Glucose (`glucose`)** and diagnosed **Diabetes**.
+
+---
+
+## 📄 Academic Project Report
+
+The complete academic report for this study has been compiled and saved in the [`Report/`](Report/) directory. It contains full clinical and theoretical motivations, mathematical derivations for SMOTE and algorithm formulations, data leakage prevention safeguards, cross-validation metrics, and clinical screening implications:
+
+<p align="center">
+  <a href="Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf">
+    <img src="https://img.shields.io/badge/Download_Report-PDF_Document-E03C31?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Download Final Report PDF" />
+  </a>
+</p>
+
+| Document Information | Details |
+| :--- | :--- |
+| **Document Title** | *Comparative Study of Different Machine Learning Models for CVD Prediction* |
+| **Direct Link** | [**📥 Click Here to View / Download the Final Report (PDF)**](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf) |
+| **Location in Repo** | [`Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf`](Report/ML-ASSIGNMENT-FINAL-REPORT-YI.pdf) |
+| **File Format / Size** | PDF Document | $\approx 1.1\text{ MB}$ |
+| **Key Topics Covered** | Statistical EDA, Anti-leakage pipeline design, SMOTE oversampling mechanics, 5-Fold Stratified CV benchmark, Feature scaling experiments, and Clinical sensitivity analysis |
 
 ---
 
